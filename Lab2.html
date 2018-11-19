@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SE 3316 - Lab 2</title>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src='script.js'></script>
+    <link rel="stylesheet" href="Lab2.css" />
+
+</head>
+
+<body>
+    <button id = changeLang onclick="changeLang()">French</button>
+    <form><input type = "password" id = "password" placeholder="Enter Password"> </form>
+    <button id = submit onclick="switchMode()">Enter</button>
+    <h3 id = error></h3>
+    <div id="title">
+        <h1>ARTIST'S VERY OWN</h1>
+    </div>
+    <div id=line></div>
+    <div id=storeLogo>
+        <img src="Images/logo.jpg">
+    </div>
+    <div id=line2></div>
+
+    <ol id="Shop">
+        <li id=OVOSoph>
+            <div id="Inventory">
+                <h2 id = name>OVO Sophmore Jacket</h2>
+                <img src="Images/OVOSophJack.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+                <button id = bOVOSoph onclick = "addItem(this.id)">Add to Cart</button>
+
+            </div>
+        </li>
+        <li id=OVOHood>
+            <div id="Inventory">
+                <h2 id = name>OVO Tournament Hoodie</h2>
+                <img src="Images/OVOTournHood.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bOVOHood onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=YeezyBoost>
+            <div id=Inventory>
+                <h2 id = name>Yeezy Boost 350 V2</h2>
+                <img src="Images/YeezyBoost.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bYeezyBoost onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=YeezyTract>
+            <div id=Inventory>
+                <h2 id = name>Calabasas Track Pants</h2>
+                <img src="Images/YeezyPants.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bYeezyTract onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=RecoTee>
+            <div id=Inventory>
+                <h2 id = name>Recovery T-shirt</h2>
+                <img src="Images/KamiShirt.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bRecoTee onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=SlimHood>
+            <div id=Inventory>
+                <h2 id = name> Slim Shady Long Tee</h2>
+                <img src="Images/KamiHood.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bSlimHood onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=LilTee>
+            <div id=Inventory>
+                <h2 id = name>Tha Carter V Promo T-Shirt</h2>
+                <img src="Images/CART_grande.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bLilTee onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="text" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=LilHood>
+            <div id=Inventory>
+                <h2 id = name>Lil Wayne X Advisory Board Crystals X Wikipedia T-shirt</h2>
+                <img src="Images/lil-wayne-tha-carter-v-album-merch-drop-4-03.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bLilHood onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=XOLongTee>
+            <div id=Inventory>
+                <h2 id = name> XO Classic Logo Longsleeve</h2>
+                <img src="Images/WKND-3_Products-30_XO_Classic_Black_Long_Sleeve-Front_800x.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bXOLongTee onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+        <li id=KissTee>
+            <div id=Inventory>
+                <h2 id = name>Kiss Land Super Fantastic Tee</h2>
+                <img src="Images/WKND-46_White-TEe_B_ef62f241-319a-419b-bc64-7f54df07a226_800x.jpg">
+                <p id = price><b>Price:</b> $150.00</p>
+                <p id = tax><b>Tax:</b> 13%</p>
+                <p id = stock><b>Quantity</b>: 5</p>
+                <button id = bKissTee onclick = "addItem(this.id)">Add to Cart</button>
+                <form><input type="number" min = "0" id="quantity" value="1"></form>
+            </div>
+        </li>
+    </ol>
+
+    <h1>Shopping Cart</h1>
+    <div id = list>
+        <table id = table style = "width: 80%">
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Subtotal</b></td>
+                <td>$0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Tax</b></td>
+                <td>13%</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Total</b></td>
+                <td>$0</td>
+            </tr>
+        </table>
+        
+        <button id = buy onclick = "buy()">BUY</button>
+        <button id = reset onclick="reset()">Reset</button>
+
+            
+
+</body>
+
+</html>

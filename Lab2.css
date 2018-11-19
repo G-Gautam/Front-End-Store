@@ -1,0 +1,107 @@
+#changeLang{
+    float: left;
+    margin-top: -4%;
+}
+form #password{
+    position: relative;
+    margin-top: -4%;
+    float: right;
+}
+#error{
+    position: relative;
+    float: right;
+    float: top;
+    margin-top: 0px;
+    font-size: 20px;
+    color: red;
+}
+
+#submit{
+    position: relative;
+    margin-top: -3%;
+    float: right;
+}
+#title{
+    width: 100%;
+    height: 20%;
+    max-height: 30%;
+}
+#title h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 800%;
+}
+#line{
+    width: 100%;
+    border-bottom: 5px solid gold;
+    margin-top: -5%;
+    
+}
+#line2{
+    width: 100%;
+    border-bottom: 5px solid gold;
+    margin-top: 6%;
+}
+#storeLogo{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+}
+#storeLogo img{
+    max-width: 33%;
+    height: 100%;
+    margin-left: 35%;
+
+}
+#Inventory{
+    position: relative;
+    width: 60%;
+    height: 45em;
+    overflow: hidden;
+    
+}
+
+#Inventory img{
+    height: 60%;
+    width: 100%;
+}
+#Inventory p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+#Inventory button{
+    float: right;
+}
+
+#Inventory form{
+    float: right;
+}
+
+#Shop{
+    list-style-type: none;
+    padding-left: 10%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+}
+#Shop h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#table *{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    list-style-type: none;
+    border: 1px solid black;
+    max-width: 50%;
+    text-align: center;
+}
+
+#buy #reset{
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
